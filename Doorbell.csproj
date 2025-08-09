@@ -1,24 +1,20 @@
-﻿<Project Sdk="Dalamud.NET.Sdk/12.0.2">
-  <PropertyGroup>
-    <Version>1.0.3.9</Version>
-	<OutputPath>..\Build\Doorbell\</OutputPath>
-  </PropertyGroup>
-  <ItemGroup>
-    <Content Include="Doorbell.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="NAudio" Version="1.10.0" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <None Remove="doorbell.wav"/>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <None Include="doorbell.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
+﻿<Project Sdk="Dalamud.NET.Sdk/13.0.0">
+    <PropertyGroup>
+        <Version>1.0.4.0</Version>
+    <OutputPath>..\Build\Doorbell\</OutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+        <Content Include="Doorbell.json" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="NAudio" Version="1.10.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Remove="doorbell.wav" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="doorbell.wav">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
 </Project>
